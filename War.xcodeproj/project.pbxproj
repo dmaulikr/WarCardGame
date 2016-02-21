@@ -12,6 +12,7 @@
 		899FAD5F1C47573A005908A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 899FAD5D1C47573A005908A1 /* Main.storyboard */; };
 		899FAD611C47573A005908A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 899FAD601C47573A005908A1 /* Assets.xcassets */; };
 		899FAD641C47573A005908A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 899FAD621C47573A005908A1 /* LaunchScreen.storyboard */; };
+		899FAD6C1C475E5D005908A1 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899FAD6B1C475E5D005908A1 /* RoundedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		899FAD601C47573A005908A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		899FAD631C47573A005908A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		899FAD651C47573A005908A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		899FAD6B1C475E5D005908A1 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				899FAD591C47573A005908A1 /* AppDelegate.swift */,
 				899FAD5B1C47573A005908A1 /* ViewController.swift */,
 				899FAD5D1C47573A005908A1 /* Main.storyboard */,
+				899FAD6B1C475E5D005908A1 /* RoundedButton.swift */,
 				899FAD601C47573A005908A1 /* Assets.xcassets */,
 				899FAD621C47573A005908A1 /* LaunchScreen.storyboard */,
 				899FAD651C47573A005908A1 /* Info.plist */,
@@ -96,6 +99,7 @@
 				TargetAttributes = {
 					899FAD551C47573A005908A1 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = E7CR6YGA9E;
 					};
 				};
 			};
@@ -136,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				899FAD5C1C47573A005908A1 /* ViewController.swift in Sources */,
+				899FAD6C1C475E5D005908A1 /* RoundedButton.swift in Sources */,
 				899FAD5A1C47573A005908A1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,10 +252,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = War/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.WillisProgramming.War;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -258,10 +266,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = War/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.WillisProgramming.War;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -284,6 +295,7 @@
 				899FAD6A1C47573A005908A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
